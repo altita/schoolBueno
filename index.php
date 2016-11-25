@@ -32,12 +32,7 @@
 	</script>
 </head>
 <body>
-<!--Primero en  movil despues para escritorio.
-1.Seccion header para encabezado
-2.dentro de header un div como contenedor
-3.checbox para activar menu con id menu-bar
-4.label como etiqueta
--->
+
 	<header>
 		<div class="contenedor">
 			<img id="img-icono"src="img/shool2.svg"/>

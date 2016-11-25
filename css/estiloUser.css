@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:500);
+
+body{padding:0;margin:0;background:#F5F5F5;font-family: 'Dosis', sans-serif;}
+
+header{
+  background:#414852;
+  height: 60px;
+  z-index: 9998;
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+h1{color:#414852}
+header .logo img {width: 50px;  margin: 5px; float: left;}
+header nav ul{ margin-top: 12px;   margin-right: 10px; list-style: none; color:#788188 ;  width: 50%;  float: right;}
+header nav ul li{
+  width: 50px;
+  display: inline-block;
+  border: 1px solid #E4E4E4;
+  text-align: center;
+  padding: 5px;
+}
+header nav ul li:active{border-color:#A1A1A1; background:#E4E4E4;}
+#confignav {
+    padding: 1px;
+    text-align: left;
+    background: #EDF2F3;
+}
+
+#confignav {
+  padding: 24px;
+  color: #f5f5f5;
+  display: none;
+  overflow: hidden;
+  background: rgba(60, 44, 10, 0.5) url('http://1.bp.blogspot.com/-JvrGJOmfefw/VLBj1ico-KI/AAAAAAAAIlA/SoLbDLtxGbc/s1600/11-1100x575.jpg') fixed center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  box-shadow: inset 0 0 50px #303030;
+}
+
+.contenido{
+  color: #858585;
+  background: #fff;
+  margin: 10px;
+
+}
+#cont_box{
+  line-height: 50px;
+  position: absolute;
+  background: #fff;
+  display: none;
+  top: 25px;
+  left: 0px;
+  margin: 0 20%;
+  padding: 20px;
+  width: 60%;
+  border: 1px solid #d9dadc;
+  box-shadow: 0 0 5px 9000px rgba(0,0,0,0.15);
+  border-radius: 2px;
+  color: #9eb2c0;
+  text-align: center;
+  z-index: 99999;
+
+}
+#cerrar_box{
+  background: #f05050;
+  color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+#img-icono{
+  padding: 3px ;
+  width: 60px;
+  float: right;
+}
+.boton_s{
+  background: #1ab667;
+  color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+/* Menu Tabla */
+.tabs-menu {
+  height: 100%;
+  float: left;
+  list-style: none;
+  clear: both;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+}
+#reportes{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 3px;
+
+}
+.tabs-menu li {
+    width: 100%;
+    height: 40px;
+    line-height: 27px;
+    text-aling:center;
+    float: left;
+    margin-right: 10px;
+    background-color: #414852;
+    border-top: 1px solid #353A41;
+}
+
+.tabs-menu li.current {
+    position: relative;
+    background-color: #53606F;
+    border-bottom: 1px solid #5B6674;
+    z-index: 5;
+}
+.tabs-menu li.current:after{
+  content: "\f0d9";
+  color: #fff;
+  font-family: FontAwesome;
+  position: absolute;
+  right: -1px;
+  font-size: 25px;
+  top: 8px;
+}
+
+.tabs-menu li a {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs-menu .current a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.tab {
+  background-color: #fff;
+  float: right;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.tab-content {
+  width: 90%;
+  text-align: justify;
+  padding: 5%;
+  display: none;
+  border: 1px solid #E4E4E4;
+}
+.tab-content img{width: 100%;}
+#tab-1 {
+ display: block;
+}
+
+@media screen and (max-width:500px) {
+
+header .logo img {width: 40px;  }
+
+header nav ul{  width: 60%;}
+header nav ul li{
+  width: 20px;height:20px;
+  border-radius:50%;
+}
+
+  #cont_box a {display :block; line-height:30px; margin:5px 0;}
+
+  .tabs-menu li {
+    overflow: hidden;
+    height: 40px;
+    line-height: 25px;
+}
+
+.tabs-menu li a i{font-size:25px; margin:0 14px}
+
+
+}
+
+}
+/*===================================
+Scrollbar Style DanielSTh
+===================================*/
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background-color:#f1f1f1}
+::-webkit-scrollbar-thumb{background-color:#2a3c3e}
+::-webkit-scrollbar-thumb:window-inactive{background:#FA411E}
+::-webkit-scrollbar-thumb:hover{background-color:#EB4149}

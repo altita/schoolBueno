@@ -1,0 +1,69 @@
+body{
+	font-family: 'Open Sans',arial;
+	margin: 0;
+	/*overflow: hidden;*/
+}
+.sidebar{
+	position: absolute;
+	/*ancgo*/
+
+	width: 250px;
+	height: 100%;
+
+	background: #333;
+	color:#fff;
+
+}
+.sidebar h2{
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background: #2a2a2a;
+}
+.sidebar ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+
+}
+.sidebar li{
+	border:1px solid #2a2a2a;
+	transition: all 0.3s;
+}
+/*Al pasar mouse sobre cualquier lista(bton)*/
+.sidebar li:hover{
+	background: #444;
+	border-left: 5px solid #eee;
+}
+.sidebar a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+p{
+
+	color:red;
+
+	font-size: 12px;
+
+}
+
+.contenido {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #eee;
+	padding: 30px;
+	transition: all 0.3s;
+	box-sizing:border-box;
+}
+
+.menu-bar{
+	cursor: pointer;
+  
+}
+
+.abrir{
+	transform:translateX(250px);
+}

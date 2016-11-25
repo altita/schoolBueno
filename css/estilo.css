@@ -1,0 +1,134 @@
+/*inportamos codigo css de menu a estilo.css*/
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+* {
+	/* ponemos margen como 0 y pading como 0 a todo el
+	LA estructura HTML O dOM*/
+	margin: 0;
+	padding: 0;
+	/*dentro de la mismo modelo de caja */
+	box-sizing: border-box;
+}
+
+body{
+	/*estilo de letra de todo el cuerpo /*/
+	font-family: 'Open Sans', arial;
+}
+/*al encabezado le daremos los siguientes estilos*/
+ header{
+ 	/*ancho como 100%*/
+ 	width: 100%;
+ 	/*altura de 50px*/
+ 	height: 80px;
+ 	/*El color de fondo*/
+ 		background: #414852;
+ 	/*Color de letra*/
+ 	color:#fff;
+	/*para que el encabezado siempre este disponible*/
+ 	position: fixed;
+ 	/*El top desde donde comienza el encabezado*/
+ 	top: 0;
+ 	/*va comenzar desde la esquina*/
+ 	left: 0;
+	/*para */
+ 	z-index: 100;
+ }
+#img-icono{
+
+	width: 90px;
+	height: 90px;
+
+}
+ .contenedor{
+ 	/*posicion que ocupa contenedor dentro del encabez*/
+ 	width: 98%;
+ 	margin: auto;
+ }
+
+  h1{
+  	/*el TITULO va estar flotando dentro del encabezado*/
+ 	float: left;
+ }
+
+ header .contenedor{
+ 	display: table;
+ }
+ section{
+ 	width: 100%;
+ 	margin-bottom: 24px;
+
+ }
+ #bienvenidos{
+ 	text-align: center;
+ }
+ footer .contenedor{
+ 	display: flex;
+ 	flex-wrap:wrap;
+ 	justify-content:center;
+ 	padding-bottom: 25px;
+
+ }
+
+ .copy{
+ 	font-size: 20px;
+
+ }
+ .sociales{
+ 	width: 100%;
+ 	text-align: center;
+ 	font-size: 28px;
+
+ }
+ .sociales a{
+ 	color: #fff;
+ 	text-decoration: none;
+ }
+
+ @media (min-width: 1024px){
+ 	.contenedor{
+ 		width: 1000px;
+ 	}
+ }
+/*
+#menu-bar{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+	cursor: pointer;
+	background-image: url(../img/menu.png);
+}
+/*
+.menu{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(51,51,51,0.9);
+	transition:all 0.5s;
+	transform:translateX(-100%);
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.menu a: hover {
+	background: rgba(255,255,255,0.3);
+}
+
+#menu-bar : checked ~ .menu {
+	transform:translateX(0%);
+}
+
+ /

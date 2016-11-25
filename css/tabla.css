@@ -1,0 +1,15 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 15px;
+   font-weight: normal;
+    padding: 8px;
+     background-color:  #1AB667;
+        border-bottom: 1px solid #fff; color: black; }
+
+td {    padding: 15px;
+
+            border-bottom: 3px  #fff;
+    color: black;     }

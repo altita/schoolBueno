@@ -1,0 +1,125 @@
+.ventana{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position:fixed;
+  background: rgba(51,51,51,0.7);
+  top: 80px;
+  right: 0px;
+  display: none;
+}
+
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #fFF;
+
+	font: 100%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a { text-decoration: none; }
+
+h1 { font-size: 1em; }
+
+h1, p {
+	margin-bottom: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 80px auto;
+	width: 500px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+
+
+}
+fieldset{
+  border: none;
+  padding: 20px;
+  text-align: center;
+}
+#cerrar{
+  color: red;
+  text-align: right;
+}
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+#login div{
+
+color: black;
+font-family: monospace;
+font-size: 20px;
+
+}
+#logo{
+  width: 150px;
+}
+#formu{
+
+width: 500px;
+
+}
+@media (max-width: 800px  ) {
+    #login {
+      width: 280px;
+    }
+    #formu{
+
+        width: 28 -`0px;
+    }
+}
+
+
+/*
+form fieldset input[type="text"], input[type="password"] {
+	background: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	color: #5a5656;
+	font-family: inherit;
+	font-size: 14px;
+	height: 50px;
+	outline: none;
+	padding: 0px 10px;
+	width: 280px;
+  -webkit-appearance:none;
+}
+
+form fieldset input[type="button"] {
+	background-color: #F88181;
+	border: none;
+	border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: inherit;
+	height: 50px;
+	text-transform: uppercase;
+	width: 280px;
+  -webkit-appearance:none;
+}
+
+
+
+form fieldset a:hover { text-decoration: underline; }

@@ -40,7 +40,6 @@
 			<input type="checkbox" id="menu-bar">
 			<!-- input con checbox con id menu-bar-->
 			<label class="icon-menu" for="menu-bar"></label>
-			<!--nav que va contener menus disponibles otra opcion es con listas UL o OL-->
 
 			<nav class="menu">
 				<a href="">Inicio</a>

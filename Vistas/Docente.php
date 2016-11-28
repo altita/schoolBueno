@@ -20,6 +20,7 @@
 		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript" src="../js/desplejable.js"></script>
 <script type="text/javascript" src="../js/validaDocente.js"></script>
+<script src="jquery.printarea.js"></script>
     <script type="text/javascript"  >
      $(document).ready(function() {
     $("#abrir_box").click(function(){
@@ -45,6 +46,7 @@
             $(tab).fadeIn();
         });
     });
+
      </script>
   </head>
   <body>
@@ -99,7 +101,11 @@
     <div class="tab">
         <div id="tab-1" class="tab-content">
             	</br><span style="font-size: 15px;"  class="boton_s"><?php echo "Benvenido:"."  ";echo $_SESSION['usuario']." ".$_SESSION['apellido'] ;?></span><br/><br/><br/>
-            <p><h1></h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in. Maecenas porttitor, est et malesuada congue, ligula elit fermentum massa, sit amet porta odio est at velit. Sed nec turpis neque. Fusce at mi felis, sed interdum tortor. Nullam pretium, est at congue mattis, nibh eros pharetra lectus, nec posuere libero dui consectetur arcu. Quisque convallis facilisis fermentum. Nam tincidunt, diam nec dictum mattis, nunc dolor ultrices ipsum, in mattis justo turpis nec ligula. Curabitur a ante mauris. Integer placerat imperdiet diam, facilisis pretium elit mollis pretium. Sed lobortis, eros non egestas suscipit, dui dui euismod enim, ac ultricies arcu risus at tellus. Donec imperdiet congue ligula, quis vulputate mauris ultrices non. Aliquam rhoncus, arcu a bibendum congue, augue risus tincidunt massa, vel vehicula diam dolor eget felis.</p>
+            <p>
+						Ser una plataforma gratuita de aprendizaje, sencilla y fácil de usar, pero también ser una red social de docentes y estudiantes que comparten opiniones, recursos etc. Con <strong>SchoolFae</strong> se pueden crear grupos de alumnos, herramientas de evaluación, foros de debate, tablones de anuncio, subir recursos propios e incluso incluir recursos alojados en plataformas externas como Google Drive, Khan Academy, Dropbox, Evernote.</p>
+						<center><span style="font-size: 15px;"  class="boton_s">Mision</span></center></br>
+						<p>
+						<strong>SchoolFae</strong> es una plataforma gratuita de aprendizaje, sencilla y fácil de usar, pero también ser una red social de docentes y estudiantes que comparten opiniones, recursos etc. Con <strong>SchoolFae</strong> se pueden crear grupos de alumnos, herramientas de evaluación, foros de debate, tablones de anuncio, subir recursos propios e incluso incluir recursos alojados en plataformas externas como Google Drive, Khan Academy, Dropbox, Evernote.</p>
         </div>
         <div id="tab-2" class="tab-content">
         </br><center><span style="font-size: 15px;"  class="boton_s">Registrar Calficaciones por Alumno</span><br/><br/><br/></center>
@@ -201,7 +207,7 @@
 
                         <div class="form-group">
                           <label class="col-sm-2 control-label"></label>
-                          <label  class="col-sm-5 control-label" id="msg" style="text-align: center;font-size: 20px;padding: 2px;color: black;"></label>
+                          <label  class="col-sm-5 control-label" id="msg" style="text-align: center;font-size: 20px;padding: 2px;black;border-radius: 10px 10px 10px 10px;"></label>
                         </div>
 
 
@@ -243,6 +249,11 @@
 				<?php
  		 include('noacreditados.php');
  				?>
+
+ 					<div style="position:right;" class=""></div>
+					<a href="../php/ReportesExcel/reportes4.php" target="_blank"><img id="reportes" src="../img/pdf.png" alt="" /></a><a href="../php/excel/reporte4.php"><img id="reportes" src="../img/excel.png" alt="" />
+					</a><a href="../php/excel/word4.php"><img id="reportes" src="../img/word.png" alt="" /></a>
+			 </div>
 	</div>
 </form>
         </div>

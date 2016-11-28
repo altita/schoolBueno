@@ -25,8 +25,9 @@ a { text-decoration:none; font-family:Tahoma, Geneva, sans-serif; color:black; f
 }
 
 </style>
-
+<div id="myPrintArea">
 <div class="container" class="container">
+
 </br>
 
 <?php
@@ -48,8 +49,9 @@ $ape=$row['apellidos'];
 <?php
 }
 ?>
-</div>
+</div></div><center><a href="javascript:void(0)" id="imprime"><img id="reportes" src="../img/imprime.svg" alt="" /></a></center>
 <script src="jquery.js"></script>
+<script src="jquery.printarea.js"></script>
 <script type="text/javascript">
 $(function() {
 $(".delete").click(function(){
@@ -69,6 +71,11 @@ if(confirm("Confimar Eliminacion de: "+info))
  }
 return false;
 
+});
+});
+$(function() {
+$("#imprime").click(function (){
+$("div#myPrintArea").printArea();
 });
 });
 </script>

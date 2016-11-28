@@ -52,9 +52,12 @@
         });
     });
 
+
+  //Imprime pantallla
+
      </script>
   </head>
-  <body>
+  <body  >
 
 
 <div id="confignav">
@@ -215,11 +218,11 @@
 				<input type="text" class="form-control" pattern="[A-Za-z ]+" data-error="Ingrese solo letras" placeholder="Nombre"  id="nombre" name="nombre" required><span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			</div>
 		</div>
-		<div class="form-group">
+		<div class="form-group  has-feedback">
 			<label class="col-sm-2 control-label">Apellido</label>
 			<div class="col-sm-5">
-				<input type="text" class="form-control" placeholder="Apellido"  id="apellido" name="apellido"
-				 data-error="Ingrese solo letras">
+				<input type="text" class="form-control" pattern="[A-Za-z ]+" placeholder="Apellido"  id="apellido" name="apellido"
+				 data-error="Ingrese solo letras"><span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			</div>
 		</div>
 
@@ -249,7 +252,7 @@
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"></label>
-							<label  class="col-sm-5 control-label" id="mensaje" style="text-align: center;font-size: 20px;padding: 2px;color: black;"></label>
+							<label  class="col-sm-5 control-label" id="mensaje" style="text-align: center;font-size: 20px;padding: 2px;color: black;border-radius: 10px 10px 10px 10px;"></label>
 						</div>
 
 
@@ -276,14 +279,10 @@
 					<span style="font-size: 25px;"  class="boton_s">Lista de Docentes</span><br/><br/><br/>
 					<div style="position:right;" class="">
 						 <a href="../php/ReportesExcel/reporte2.php" target="_blank"><img id="reportes" src="../img/pdf.png" alt="" /></a><a href="../php/excel/reporte2.php"><img id="reportes" src="../img/excel.png" alt="" /></a><a href="../php/excel/word2.php"><img id="reportes" src="../img/word.png" alt="" /></a>
+
 					</div>
 
 				</center>
-
-
-
-
-
 
 				<?php
 				include("listaDoc.php");

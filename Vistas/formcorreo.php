@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 
 <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
-<form class="form-inline" action="procesa.php" method="POST">
+<form class="form-inline" action="PHPMailer/enviar.php" method="POST">
   <div class="form-group">
     <label for="exampleInputName2">Ingrese El email de alumno</label>
 

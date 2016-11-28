@@ -55,6 +55,7 @@
   <body>
 
 
+
 <div id="confignav">
 </div>
 
@@ -64,7 +65,6 @@
 <center>
 
 <header>
-
 <ul class="menu">
 
  <li><a href=""><img id="img-icono" src="../img/user.svg" alt="" /></a>
@@ -89,7 +89,7 @@
         <li class="current"><a href="#tab-1"><i class="fa fa-tachometer"></i> Inicio</a></li>
         <li><a href="#tab-2"><i class="fa fa-wifi"></i>Consultar calificacion</a></li>
         <li><a href="#tab-3"><i class="fa fa-info-circle"></i>Actualizar Informacion personal</a></li>
-        <li><a href="#tab-4"><i class="fa fa-paper-plane-o"></i> Contactos</a></li>
+        <li><a href="#tab-4"><i class="fa fa-paper-plane-o"></i>Avisos</a></li>
 			<li ></br></br>
          <div style="background-color: #414852;color:white;font-size:20px;font-family:font: small-caps 100%/200% serif;">
 				<?php
@@ -109,14 +109,20 @@
 
     <div class="tab">
         <div id="tab-1" class="tab-content">
-					</br><span style="font-size: 15px;"  class="boton_s"><?php echo "Benvenido:"."  ";echo $_SESSION['usuario']." ".$_SESSION['apellido'] ;?></span><br/><br/><br/>
-            <h1></h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet purus urna. Proin dictum fringilla enim, sit amet suscipit dolor dictum in. Maecenas porttitor, est et malesuada congue, ligula elit fermentum massa, sit amet porta odio est at velit. Sed nec turpis neque. Fusce at mi felis, sed interdum tortor. Nullam pretium, est at congue mattis, nibh eros pharetra lectus, nec posuere libero dui consectetur arcu. Quisque convallis facilisis fermentum. Nam tincidunt, diam nec dictum mattis, nunc dolor ultrices ipsum, in mattis justo turpis nec ligula. Curabitur a ante mauris. Integer placerat imperdiet diam, facilisis pretium elit mollis pretium. Sed lobortis, eros non egestas suscipit, dui dui euismod enim, ac ultricies arcu risus at tellus. Donec imperdiet congue ligula, quis vulputate mauris ultrices non. Aliquam rhoncus, arcu a bibendum congue, augue risus tincidunt massa, vel vehicula diam dolor eget felis.</p>
+					</br><span style="font-size: 15px;"  class="boton_s"><?php echo "Benvenido:"."  ";echo $_SESSION['usuario']." ".$_SESSION['apellido'] ;?></span><br/>
+            <h1></h1>
+						<center><span style="font-size: 15px;"  class="boton_s">Vision</span></center></br>
+						<p>
+						Ser una plataforma gratuita de aprendizaje, sencilla y fácil de usar, pero también ser una red social de docentes y estudiantes que comparten opiniones, recursos etc. Con <strong>SchoolFae</strong> se pueden crear grupos de alumnos, herramientas de evaluación, foros de debate, tablones de anuncio, subir recursos propios e incluso incluir recursos alojados en plataformas externas como Google Drive, Khan Academy, Dropbox, Evernote.</p>
+						<center><span style="font-size: 15px;"  class="boton_s">Mision</span></center></br>
+						<p>
+						<strong>SchoolFae</strong> es una plataforma gratuita de aprendizaje, sencilla y fácil de usar, pero también ser una red social de docentes y estudiantes que comparten opiniones, recursos etc. Con <strong>SchoolFae</strong> se pueden crear grupos de alumnos, herramientas de evaluación, foros de debate, tablones de anuncio, subir recursos propios e incluso incluir recursos alojados en plataformas externas como Google Drive, Khan Academy, Dropbox, Evernote.</p>
         </div>
         <div id="tab-2" class="tab-content">
 				</br><span style="font-size: 15px;"  class="boton_s">Calificaciones Obtenidas</span><br/><br/><br/>
 
 				<center>
-            <a href="../php/ReportesExcel/reporte3.php" target="_blank"><img id="reportes" src="../img/pdf.png" alt="" /></a><a href=""><img id="reportes" src="../img/excel.png" alt="" /></a>
+            <a href="../php/ReportesExcel/reporte3.php" target="_blank"><img id="reportes" src="../img/pdf.png" alt="" /></a><a href="../php/excel/reporte3.php"><img id="reportes" src="../img/excel.png" alt="" /></a><a href="../php/excel/word3.php"><img id="reportes" src="../img/word.png" alt="" /></a>
 				</center>
 				<?php
 					include('boleta.php');
@@ -173,8 +179,10 @@
 
         </div>
         <div id="tab-4" class="tab-content">
-            <p><h1>Contactos</h1>
-
+            <p><h1>Avisos</h1>
+             <p>1-Para un mejor servicion su certificado sera enviado a su correo electronico.</p>
+						 <p>2-Cualquier duda con sus datos personales consultar con el administrador</p>
+						 <p>3.Aclaraciones con Calificaciones consulte con el docente.</p>
             </p>
         </div>
     </div>

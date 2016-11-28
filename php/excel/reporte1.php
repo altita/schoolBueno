@@ -14,6 +14,7 @@ while($row = mysqli_fetch_array($rs)){
    	$header .= "\n";
 }
 $data=$header;
+
 $data = str_replace("\r", "", $data);
 if ($data == "") {
 	$data = "\nNo Hay Registros que Mostrar\n";

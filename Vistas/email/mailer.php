@@ -48,7 +48,7 @@
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "erroar al enviar!!.";
+        echo "error al enviar!!.";
     }
 
 ?>

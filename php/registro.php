@@ -14,7 +14,7 @@ $numcontrol = $_POST['numcontrol'];
 
 
 
-$registro = new conexion();
+$registro = new conexion;
 $registro -> registrarAlumno($numcontrol,$nombre,$apellido,$sexo,$domicilio,$edad, $email,$carrera,$pass1, $pass2 );
 $registro -> cerrar();
 

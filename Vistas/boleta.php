@@ -6,7 +6,7 @@ include("../php/conexionbd.php");
 $num_control = $_SESSION['num_control'];
 $consult ="SELECT * from boleta where id_ncontrol = '".$num_control."'";
 $result = mysqli_query($conexion,$consult);
-
+echo '<div id="myPrintArea">';
 echo "<center>";
 echo '<div class="table-responsive">';
  echo '<table class="table table-bordered table-striped table-highlight">';
@@ -27,6 +27,16 @@ echo '</tbody>';
 }
 echo '</center>';
 echo '</table>';
-echo "</div>";
+echo "</div></div><center><a href='javascript:void(0)' id='imprime'><img id='reportes' src='../img/imprime.svg' alt='' /></a></center>";
+
 
  ?>
+ <script src="jquery.js"></script>
+ <script src="jquery.printarea.js"></script>
+ <script type="text/javascript">
+ $(function() {
+ $("#imprime").click(function (){
+ $("div#myPrintArea").printArea();
+ });
+ });
+ </script>

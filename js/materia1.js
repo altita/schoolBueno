@@ -28,7 +28,7 @@ $('#guarda1').click(function(){
             $('#msg').html('Datos registrados ').css("background-color", "#008080");
            }else if(msg == '2'){
              console.log('Errror!!!');
-            $('#msg').html('No registrado ha ocurrido un error!! ').css("background-color", "#ff6347");
+            $('#msg').html('No registrado ha ocurrido un error!! ').css("background-color", "#ff6347)
 
         }
          }

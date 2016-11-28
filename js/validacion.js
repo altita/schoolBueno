@@ -12,6 +12,7 @@ $(function(){
              password : clave
            },
            success: function(msg){
+             alert(msg);
              if (msg == '1') {
                $('#aviso').html('Datos incorrectos');
              }else{
@@ -38,8 +39,20 @@ $('#registrar').click(function(){
   var carrera = $('#carrera').val();
   var pass1 = $('#contra1').val();
   var pass2 = $('#contra2').val();
-
-    if (numcontrol!=='' && nombre!=='' && apellido !==''&& sexo !=='' && domicilio !=='' && edad!=='' &&email !=='' && pass1 !==''&& pass2!=='') {
+  if(!(/^\d{10}$/.test(numcontrol))){
+    $('#msg').html('El numero  de control debe ser de 10 digitos').css("background-color", "#ff6347");
+  }else if(!(/^[A-Za-z ]+$/.test(nombre))){
+    $('#msg').html('El nombre debe llevar solo letras').css("background-color", "#ff6347");
+  }else if(!(/^[A-Za-z ]+$/.test(apellido))){
+    $('#msg').html('El Apellido debe llevar solo letras').css("background-color", "#ff6347");
+  }else if(!(/^[A-Za-z ]+$/.test(domicilio))){
+    $('#msg').html('El domicilio debe llevar solo letras').css("background-color", "#ff6347");
+  }else if((edad>=30 | edad<=15)){
+    $('#msg').html('Edad entre 15-30').css("background-color", "#ff6347");
+  }
+  else if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email))) {
+    $('#msg').html('formato incorrecto en Correo').css("background-color", "#ff6347");
+  }else if (numcontrol!=='' && nombre!=='' && apellido !==''&& sexo !=='' && domicilio !=='' && edad!=='' &&email !=='' && pass1 !==''&& pass2!=='') {
        $.ajax({
          url : '../php/registro.php',
          method : 'POST',
@@ -96,10 +109,24 @@ $('#registrardocente').click(function(){
     var emai = document.forms.f.email.value;
     var pass1 = document.forms.f.contra1.value;
     var pass2 = document.forms.f.contra2.value;
+    if(!(/^\d{10}$/.test(clav))||(/^[A-Za-z ]+$/.test(telefon))){
 
-
-
-      if (clav!=='' && nombr!=='' && apellid !==''&& telefon !=='' && emai !=='' &&  pass1!=='' && pass2 !=='') {
+      $('#mensaje').html('La clave debe ser de 10 digitos').css("background-color", "#ff6347");
+      event.preventDefault();
+    }else if(!(/^[A-Za-z ]+$/.test(nombr))){
+      event.preventDefault();
+      $('#mensaje').html('El nombre debe llevar solo letras').css("background-color", "#ff6347");
+    }else if(!(/^[A-Za-z ]+$/.test(apellid))){
+      event.preventDefault();
+      $('#mensaje').html('El Apellido debe llevar solo letras').css("background-color", "#ff6347");
+    }else if(!(/^\d{10}$/.test(telefon))||(/^[A-Za-z ]+$/.test(telefon))){
+      event.preventDefault();
+      $('#mensaje').html('El telefono debe ser 9 digitos').css("background-color", "#ff6347");
+    }
+    else if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(emai))) {
+      event.preventDefault();
+      $('#mensaje').html('formato incorrecto en Correo').css("background-color", "#ff6347");
+    }else  if (clav!=='' && nombr!=='' && apellid !==''&& telefon !=='' && emai !=='' &&  pass1!=='' && pass2 !=='') {
 
          $.ajax({
            url : '../php/registroDocente.php',

@@ -1,6 +1,6 @@
 <?php
 
- require('Conexion.php');
+ include('Conexion.php');
 $grupo = $_POST['grupo'];
  $materia = $_POST['materia'];
  $alumno = $_POST['alumno'];

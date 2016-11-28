@@ -7,6 +7,7 @@
   					from boleta inner join alumno on alumno.num_control=boleta.id_ncontrol
   					where promedio>=7";
   			$resultado_consulta_mysql=mysqli_query($conexion,$consulta_mysql);
+        echo '<div id="myPrintArea">';
         echo "<center>";
         echo '<div class="table-responsive">';
          echo '<table class="table table-bordered table-striped table-highlight">';
@@ -24,6 +25,15 @@
   		 }
  echo '</center>';
   echo '</table>';
-  echo "</div>";
+  echo "</div></div><a href='javascript:void(0)' id='imprime'><img id='reportes' src='../img/imprime.svg' alt='' /></a>";
   echo "</br>";
 ?>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="jquery.printarea.js"></script>
+<script type="text/javascript">
+$(function() {
+$("#imprime").click(function (){
+$("div#myPrintArea").printArea();
+});
+});
+</script>

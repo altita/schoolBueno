@@ -11,6 +11,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1,minimun-scale=1">
 	<title>Proyecto</title>
 	<link rel="stylesheet"  href="css/fontello.css">
+	<link rel="icon" type="image/png" href="img/icono.png" />
+
 
 	<link rel="stylesheet"  href="css/estilo.css">
 	<link rel="stylesheet"  href="css/log.css">
@@ -32,7 +34,12 @@
 	</script>
 </head>
 <body>
-
+<!--Primero en  movil despues para escritorio.
+1.Seccion header para encabezado
+2.dentro de header un div como contenedor
+3.checbox para activar menu con id menu-bar
+4.label como etiqueta
+-->
 	<header>
 		<div class="contenedor">
 			<img id="img-icono"src="img/shool2.svg"/>
@@ -40,6 +47,7 @@
 			<input type="checkbox" id="menu-bar">
 			<!-- input con checbox con id menu-bar-->
 			<label class="icon-menu" for="menu-bar"></label>
+			<!--nav que va contener menus disponibles otra opcion es con listas UL o OL-->
 
 			<nav class="menu">
 				<a href="">Inicio</a>

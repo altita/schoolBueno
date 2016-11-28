@@ -1,3 +1,4 @@
 <?php
- $conexion = new mysqli('localhost', 'root', 'alta', 'proye');
+ $conexion = new mysqli('localhost', 'root', 'eze', 'schoolfae');
+
  ?>

@@ -6,8 +6,8 @@
 
       private $servidor = "localhost";
       private $users = "root";
-      private $pass = "eze";
-      private $db = "schoolfae";
+      private $pass = "alta";
+      private $db = "proye";
 
       private $user;
       private $password;

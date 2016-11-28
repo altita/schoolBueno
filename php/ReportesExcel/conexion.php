@@ -11,7 +11,7 @@ class DB{
 		$this->BaseDatos = "schoolfae";
 		$this->Servidor = "localhost";
 		$this->Usuario = "root";
-		$this->Clave = "eze";
+		$this->Clave = "alta";
 	}
 
 	 function conectar() {

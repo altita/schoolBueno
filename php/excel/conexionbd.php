@@ -1,4 +1,4 @@
 <?php
- $conexion = new mysqli('localhost', 'root', 'eze', 'schoolfae');
+ $conexion = new mysqli('localhost', 'root', 'alta', 'schoolfae');
 
  ?>

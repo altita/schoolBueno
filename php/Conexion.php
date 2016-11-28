@@ -6,7 +6,7 @@
 
       private $servidor = "localhost";
       private $users = "root";
-      private $pass = "eze";
+      private $pass = "alta";
       private $db = "schoolfae";
 
       private $user;

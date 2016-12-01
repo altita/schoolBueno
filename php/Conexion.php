@@ -1,6 +1,6 @@
 <?php
-
-  class conexion{
+include 'Simpletest/autorun.php';
+  class conexion extends UnitTestCase{
 
       private $conexion;
 
@@ -208,11 +208,6 @@ function ActualizarAlumno($domicilio,$edad,$email,$contra){
 }
 
  }
-
-
-
-
-
   }
 
  ?>

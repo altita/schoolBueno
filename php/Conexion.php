@@ -208,6 +208,11 @@ function ActualizarAlumno($domicilio,$edad,$email,$contra){
 }
 
  }
+
+
+
+
+
   }
 
  ?>

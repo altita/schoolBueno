@@ -13,10 +13,7 @@ include 'Simpletest/autorun.php';
       private $password;
       //Constructor Es el que iniciliza valores de objetos
       public function __construct(){
-        //por sintaxis de php esta funcion de mysqli hace la conexion
-        //utilizando parametros usando el servidor que nuestro carousel-control
-        //como es local se utiliza localhost el nombre de usuario, la contraseña,
-        //y el nombre  de la base de datos
+
         $this->conexion = new mysqli($this->servidor,$this->users,$this->pass,$this->db);
         //si conexion tiene error
         if ($this->conexion->connect_errno) {

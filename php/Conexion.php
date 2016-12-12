@@ -1,19 +1,15 @@
 <?php
 include 'Simpletest/autorun.php';
   class conexion extends UnitTestCase{
-
       private $conexion;
-
       private $servidor = "localhost";
       private $users = "root";
       private $pass = "alta";
       private $db = "schoolfae";
-
       private $user;
       private $password;
       //Constructor Es el que iniciliza valores de objetos
       public function __construct(){
-
         $this->conexion = new mysqli($this->servidor,$this->users,$this->pass,$this->db);
         //si conexion tiene error
         if ($this->conexion->connect_errno) {
@@ -21,11 +17,9 @@ include 'Simpletest/autorun.php';
           die('Error al conectar');
         }
       }
-
       public function cerrar(){
         $this->conexion->close();
       }
-
       public function login($usuario,$pass){
         //nuestro parametros que es usuario y contraseña
         $this->user = $usuario;
@@ -57,17 +51,8 @@ include 'Simpletest/autorun.php';
         $_SESSION['edad'] = $row['edad'];
         $_SESSION['carrera'] = $row['id_carrera'];
 
-
-          # code...
-
-        //  $_SESSION['apellido'] = $row2['Apellidos'] ;
-
-
-
          echo "Vistas/Alumno.php";
-         /* echo "Usuario o contraseñas incorrectos";
-          header("location:../index.html");*/
-          //si es 3 hara lo siguiente mostrara vista profesor
+
         } else {
           $query2 = "SELECT * from profesor where email = '".$this->user."' and contra = '".$this->password."'";
           $consulta2 = $this->conexion->query($query2);
@@ -75,30 +60,20 @@ include 'Simpletest/autorun.php';
           $row2 = mysqli_fetch_array($consulta2);
           if($row2['id_cargo'] == 2){
               session_start();
-
               $_SESSION['validacion'] = 1 ;
-
               echo "Vistas/Docente.php";
-
               $_SESSION['codigo'] = $row2['cod_profesor'];
               $_SESSION['usuario'] = $row2['nombre'];
               $_SESSION['apellido'] = $row2['apellidos'];
               $_SESSION['telefono'] = $row2['telefono'];
               $_SESSION['email'] = $row2['email'];
-
-
              } else{
           session_start();
-
           $_SESSION['validacion'] = 0 ;
-
           echo "1";
              }
-
        }
-
       }
-
       function registrarAlumno($numcontrol,$nombre,$apellido,$sexo,$domicilio,$edad, $email,$carrera,$pass1, $pass2){
       //comparacion si contraseña 1 es igual a la segunda
       //contraseña ingresad
@@ -182,11 +157,6 @@ include 'Simpletest/autorun.php';
               }else{
                 echo "2";
               }
-
-
-
-
-
 }
 function ActualizarAlumno($domicilio,$edad,$email,$contra){
 
@@ -201,15 +171,7 @@ function ActualizarAlumno($domicilio,$edad,$email,$contra){
             }else{
               echo "2";
             }
-
 }
-
  }
-
-
-
-
-
   }
-
  ?>

@@ -2,19 +2,16 @@
 include '../Simpletest/autorun.php';
 class DB extends UnitTestCase{
 	var $conect;
-
 	var $BaseDatos;
 	var $Servidor;
 	var $Usuario;
 	var $Clave;
-
 	function DB(){
 		$this->BaseDatos = "schoolfae";
 		$this->Servidor = "localhost";
 		$this->Usuario = "root";
 		$this->Clave = "alta";
 	}
-
 	 function conectar() {
 		if(!($con=@mysql_connect($this->Servidor,$this->Usuario,$this->Clave))){
 			echo"<h1> [:(] Error al conectar a la base de datos</h1>";

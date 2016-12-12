@@ -1,9 +1,8 @@
 <?php
-
 require('fpdf/fpdf.php');
 require('conexion.php');
-class PDF extends FPDF
-{
+
+class PDF extends FPDF{
 var $widths;
 var $aligns;
 

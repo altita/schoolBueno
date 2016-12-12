@@ -1,5 +1,6 @@
 <?php
-class DB{
+include '../Simpletest/autorun.php';
+class DB extends UnitTestCase{
 	var $conect;
 
 	var $BaseDatos;

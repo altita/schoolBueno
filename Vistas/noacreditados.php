@@ -1,6 +1,4 @@
 <script type="text/javascript" src="../js/materia1.js"></script>
-
-
   <?php
   				 include('../php/conexionbd.php');
   				 $consulta_mysql="SELECT promedio,alumno.Nombre,alumno.Apellidos
